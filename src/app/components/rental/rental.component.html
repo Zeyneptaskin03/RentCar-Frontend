@@ -1,0 +1,30 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">brandName</th>
+        <th scope="col">carName</th>
+        <th scope="col">companyName</th>
+        <th scope="col">colorName</th>   
+        <th scope="col">name</th>
+        <th scope="col">rentDate</th>
+        <th scope="col">returnDate</th>
+
+
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let rental of rentals">
+        <th scope="col">{{rental.id}}</th>
+        <td>{{rental.brandName}}</td>
+        <td>{{rental.carName}}</td>
+        <td>{{rental.companyName}}</td>
+        <td>{{rental.colorName}}</td>     
+        <td>{{rental.name}}</td>
+        <td>{{rental.rentDate}}</td>
+        <td>{{rental.returnDate}}</td>
+
+      </tr>
+    </tbody>
+  </table>

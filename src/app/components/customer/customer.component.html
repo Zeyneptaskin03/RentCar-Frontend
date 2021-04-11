@@ -1,0 +1,10 @@
+<h5>Müşteriler</h5>
+<ul class="list-group">
+  <li
+  (click)="setCurrentCustomer(customer)"
+  routerLink="/cars/customer/{{ customer.id }}"
+   *ngFor="let customer of customers" 
+   [class]=" getCurrentCustomerClass(customer)">
+    {{ customer.companyName }}
+  </li>
+</ul>
